@@ -22,6 +22,12 @@ class Graph2 extends React.Component {
         });
         const options = {
             title: 'Observed Soil Moisture vs Time',
+            titleTextStyle: {
+                color: "red",
+                fontName: 'Times New Roman',
+                fontSize: "35",
+                bold: true,
+            },
             // title: humidity_data,
             hAxis: {title: 'Time',},
             vAxis: {title: 'Soil Moisture', viewWindowMode:'explicit',

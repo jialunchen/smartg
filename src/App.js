@@ -155,27 +155,12 @@ function App() {
 
       <div className = "First_raw">
           <Graph1 humidity_data= {userData.light_observed} ClassName={"graphbox"} />
-          <h2 className={"infobox"}>
-
-                Information:
-
-
-          </h2>
+          <Graph2 humidity_data= {userData.soil_observed} ClassName={"graphbox"}/>
           {/*<Button  size = "medium" className={classes.margin} variant="contained" color="primary" onClick={Shoot}>Turn on*/}
           {/*</Button>{" "}*/}
 
       </div>
 
-
-
-      <div className = "First_raw">
-            <Graph2 humidity_data= {userData.soil_observed} ClassName={"graphbox"}/>
-            <h2 className={"infobox"}>
-                Information:
-
-            </h2>
-
-      </div>
 
 
       <div className = "First_raw">
