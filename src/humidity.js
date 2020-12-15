@@ -1,25 +1,27 @@
 import {Chart} from 'react-google-charts';
 import React from 'react'
 
-async function getMoviesFromApi() {
-    try {
-        let response = await fetch('https://facebook.github.io/react-native/movies.json');
-        let responseJson = await response.json();
-        return responseJson.movies;
-    } catch(error) {
-        console.error(error);
-    }
-}
+// async function getMoviesFromApi() {
+//     try {
+//         let response = await fetch('https://facebook.github.io/react-native/movies.json');
+//         let responseJson = await response.json();
+//         return responseJson.movies;
+//     } catch(error) {
+//         console.error(error);
+//     }
+// }
 
 
 class Graph1 extends React.Component {
 
-
     constructor(props){
         super(props);
+        console.log(props.humidity_data)
+        let test = props.humidity_data
         this.state={
             options:{
-                title: 'times. vs light comparison',
+                // title: 'times. vs light comparison',
+                title: test,
 
 
                 hAxis: {title: 'Time', minValue: 0, maxValue: 15},
