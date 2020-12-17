@@ -23,6 +23,12 @@ class Graph3 extends React.Component {
         });
         const options = {
             title: 'Predicted Light vs Time',
+            titleTextStyle: {
+                color: "red",
+                fontName: 'Times New Roman',
+                fontSize: "35",
+                bold: true,
+            },
             // title: humidity_data,
             hAxis: {title: 'Time',},
             vAxis: {title: 'lux', viewWindowMode:'explicit',

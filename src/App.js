@@ -19,11 +19,11 @@ import Graph4 from "./graph4";
 // import {blue} from "@material-ui/core/colors";
 //const datalink = "https://api.github.com/users/deekshasharma";
 // const datalink = "http://18.216.177.93:8080/sensor?pos=99&row=99";
-// const datalink = "http://18.216.177.93:8080/sensor?pos=20&row=17";
-// const datalink2 = "http://18.216.177.93:8080/leaves"
+const datalink = "http://18.216.177.93:8080/sensor?pos=20&row=17";
+const datalink2 = "http://18.216.177.93:8080/leaves"
 //const datalink2 = "https://reactnative.dev/movies.json";
-const datalink = "/sensor?pos=20&row=17";
-const datalink2 = "/leaves";
+// const datalink = "/sensor?pos=20&row=17";
+// const datalink2 = "/leaves";
 
 function App() {
     // const classes = useStyles();
@@ -68,7 +68,7 @@ function App() {
 
           </h1>
           <h1 className={"H1"}>
-              team:
+
           </h1>
 
 
@@ -83,11 +83,11 @@ function App() {
               </h4>
 
            </board_name>
-          <board_name >
-              <img src={userimg.annotated_img} height={"200px"}/>
-              {/*<h4 className={"H4"}>*/}
-              {/*    8*/}
-              {/*</h4>*/}
+          <board_name className={"H3"}>
+              Initial leaves
+              <h4 className={"H4"}>
+                  10
+              </h4>
 
           </board_name>
 
@@ -113,28 +113,24 @@ function App() {
 
       <div className = "First_raw">
             <Graph3 humidity_data= {userData.light_predicted} ClassName={"graphbox"}/>
-            <h2 className={"infobox"}>
-                Information:
-
-            </h2>
-
-      </div>
-
-
-      <div className = "First_raw">
             <Graph4 humidity_data= {userData.soil_predicted} ClassName={"graphbox"}/>
-            <h2 className={"infobox"}>
-                Information:
-            </h2>
 
       </div>
+
+
+      {/*<div className = "First_raw">*/}
+      {/*      <Graph4 humidity_data= {userData.soil_predicted} ClassName={"graphbox"}/>*/}
+      {/*      <h2 className={"infobox"}>*/}
+      {/*          Information:*/}
+      {/*      </h2>*/}
+
+      {/*</div>*/}
 
 
 
       <div className="First_raw">
             {/*<img src={p1} width={"700"} />*/}
-
-
+          <img src={userimg.annotated_img} height={"400px"}/>
       </div>
 
 
