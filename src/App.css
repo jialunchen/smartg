@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   flex-direction: column;
-  max-width: 1920px;
+
   vertical-align: middle;
   position: absolute;
   margin: 0;
@@ -36,7 +36,7 @@
   /*border: 1px solid black;*/
 }
 .H1{
-  font-size: calc(10px);
+  font-size: calc(20px);
 }
 .infobox{
   display: flex;
@@ -90,10 +90,13 @@
   justify-content: space-between;
   width: content-box;
   height: fit-content;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 30px;
   padding-bottom: 30px;
+
+}
+.cv_raw{
 
 }
 

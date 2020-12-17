@@ -6,7 +6,6 @@ import Graph2 from './Moisture';
 import Graph1 from './light';
 import Graph3 from './graph3';
 import Graph4 from "./graph4";
-
 // import { makeStyles } from '@material-ui/core/styles';
 // import Typography from '@material-ui/core/Typography';
 // import Slider from '@material-ui/core/Slider';
@@ -64,10 +63,10 @@ function App() {
     <div className="App">
       <header className="App-header">
           Wild Plant Growth Analysis
-          <h1 className={"H1"}>
 
-          </h1>
           <h1 className={"H1"}>
+              Team:Jialun Chen, Brent Uramoto, Tyler Kirby
+
 
           </h1>
 
@@ -77,14 +76,14 @@ function App() {
 
       <div className="Board_raw">
           <board_name className={"H3"}>
-              Total days
+              Total Days
               <h4 className={"H4"}>
                   {userData.soil_observed?.length%24}
               </h4>
 
            </board_name>
           <board_name className={"H3"}>
-              Initial leaves
+              Initial Number of Leaves
               <h4 className={"H4"}>
                   10
               </h4>
@@ -92,7 +91,7 @@ function App() {
           </board_name>
 
           <board_name className={"H3"}>
-              Number of leaves
+              Number of Leaves
               <h4 className={"H4"}>
                   {userimg.number_of_leaves}
               </h4>
@@ -128,9 +127,10 @@ function App() {
 
 
 
-      <div className="First_raw">
+      <div className="Cv_raw">
+          <h3 className={"H6"}>Computer Vision Model Result:</h3>
             {/*<img src={p1} width={"700"} />*/}
-          <img src={userimg.annotated_img} height={"400px"}/>
+          <img src={userimg.annotated_img} height={"400px"} width={"700px"}/>
       </div>
 
 

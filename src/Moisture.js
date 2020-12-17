@@ -8,7 +8,7 @@ class Graph2 extends React.Component {
         const { humidity_data = [] } = this.props;
         console.log(humidity_data)
         const data = [["Time", "Soil Moisture"]];
-        var currentdata = humidity_data.slice(humidity_data.length-24,humidity_data.length)
+        var currentdata = humidity_data.slice(humidity_data.length-48,humidity_data.length)
         var min_data = Math.min(currentdata)-1;
         var max_data = Math.max(currentdata)+1;
 
@@ -22,6 +22,10 @@ class Graph2 extends React.Component {
         });
         const options = {
             title: 'Observed Soil Moisture vs Time',
+            // height: "500",
+            // height_units:"%",
+            // width: "550",
+            // heighg_units:"%",
             titleTextStyle: {
                 color: "red",
                 fontName: 'Times New Roman',

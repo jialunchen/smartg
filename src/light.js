@@ -9,7 +9,7 @@ class Graph1 extends React.Component {
         const { humidity_data = [] } = this.props;
         console.log(humidity_data)
         const data = [["Time", "lux"]];
-        var currentdata = humidity_data.slice(humidity_data.length-24,humidity_data.length);
+        var currentdata = humidity_data.slice(humidity_data.length-48,humidity_data.length);
         var min_data = Math.min(currentdata)-1;
         var max_data = Math.max(currentdata)+1;
         console.log(min_data)
@@ -23,7 +23,11 @@ class Graph1 extends React.Component {
             ]);
         });
         const options = {
-            title: 'Observed Light Vs Time',
+            title: 'Observed Light vs Time',
+            // height: "500",
+            // height_units:"%",
+            // width: "550",
+            // heighg_units:"%",
             titlePosition: "anchorOriginTopCenter",
             titleTextStyle: {
                 color: "red",
@@ -57,8 +61,8 @@ class Graph1 extends React.Component {
                 chartType="LineChart"
                 data={data}
                 options={options}
-                width= {"700px"}
-                height={"400px"}
+                width= {700}
+                height= {400}
                 legend_toggle
             />
         );
