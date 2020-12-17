@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   flex-direction: column;
+  max-width: 1920px;
+  vertical-align: middle;
+  position: absolute;
+  margin: 0;
+  left:0;
+  right:0;
 }
 
 .App-header {
@@ -13,6 +19,7 @@
   font-size: calc(70px);
   color: white;
   padding: 20px;
+
 }
 
 .Board_raw{

@@ -6,6 +6,7 @@ import Graph2 from './Moisture';
 import Graph1 from './light';
 import Graph3 from './graph3';
 import Graph4 from "./graph4";
+
 // import { makeStyles } from '@material-ui/core/styles';
 // import Typography from '@material-ui/core/Typography';
 // import Slider from '@material-ui/core/Slider';
@@ -18,63 +19,11 @@ import Graph4 from "./graph4";
 // import {blue} from "@material-ui/core/colors";
 //const datalink = "https://api.github.com/users/deekshasharma";
 // const datalink = "http://18.216.177.93:8080/sensor?pos=99&row=99";
-const datalink = "http://18.216.177.93:8080/sensor?pos=20&row=17";
-const datalink2 = "http://18.216.177.93:8080/leaves"
+// const datalink = "http://18.216.177.93:8080/sensor?pos=20&row=17";
+// const datalink2 = "http://18.216.177.93:8080/leaves"
 //const datalink2 = "https://reactnative.dev/movies.json";
-
-
-
-// const useStyles = makeStyles((theme) => ({
-//     margin: {
-//         margin: theme.spacing(1),
-//         height: 50,
-//         top:150,
-//         width:170
-//
-//     },
-//     extendedIcon: {
-//         marginRight: theme.spacing(1),
-//     },
-//     root: {
-//         flexGrow: 1,
-//
-//
-//     },
-//     paper: {
-//         padding: theme.spacing(2),
-//         textAlign: 'center',
-//         color: theme.palette.text.secondary,
-//         // height:"100%",
-//     },
-//     slider:{
-//         margin: theme.spacing(1),
-//         width:170,
-//         top:150,
-//     },
-//
-//     paper_header:{
-//         height:200,
-//         color:"#3f51b5",
-//     },
-//     paper_second:{
-//         height:200,
-//         color:"#3f51b5",
-//     },
-//
-// }));
-
-// function valuetext(value) {
-//     return `${value}°C`;
-// }
-//
-// let light =1
-// function Shoot(){
-//     if (light==1){alert("The light is ON"); }
-//     if(light ==-1){alert("The light is OFF");}
-//     light = light*-1
-//
-// }
-
+const datalink = "/sensor?pos=20&row=17";
+const datalink2 = "/leaves";
 
 function App() {
     // const classes = useStyles();
